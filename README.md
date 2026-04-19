@@ -48,11 +48,11 @@ curl -fsSL https://raw.githubusercontent.com/conley2322/Alocs-Assistant/main/ins
 
 ### 安装目录
 
-技能默认安装到：`$HOME/Alocs-Assistant`
+技能默认安装到：`$HOME/.agents/skills/Alocs-Assistant`
 
 ### 跨环境使用
 
-如需在其他环境中使用，请确保将安装目录添加到相应的技能路径中。
+技能已安装到系统内置技能目录，任何 IDE 软件都能获取到进行使用。
 
 ## 使用方法
 

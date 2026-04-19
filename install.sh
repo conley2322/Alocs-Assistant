@@ -19,13 +19,16 @@ if ! command -v python3 &> /dev/null; then
 fi
 
 # 定义技能目录
-SKILL_DIR="$HOME/Alocs-Assistant"
+SKILL_DIR="$HOME/.agents/skills/Alocs-Assistant"
 
 # 创建技能目录
 if [ -d "$SKILL_DIR" ]; then
     echo "检测到已存在 Alocs-Assistant 技能目录，正在更新..."
     rm -rf "$SKILL_DIR"
 fi
+
+# 确保技能目录存在
+mkdir -p "$HOME/.agents/skills"
 
 # 克隆仓库
 echo "正在克隆仓库..."
