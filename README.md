@@ -46,9 +46,17 @@ curl -fsSL https://raw.githubusercontent.com/conley2322/Alocs-Assistant/main/ins
    ./install.sh
    ```
 
+### 安装目录
+
+技能默认安装到：`$HOME/Alocs-Assistant`
+
+### 跨环境使用
+
+如需在其他环境中使用，请确保将安装目录添加到相应的技能路径中。
+
 ## 使用方法
 
-1. 安装完成后，在 Trae IDE 中使用 Alocs-Assistant 技能
+1. 安装完成后，在 Trae IDE 或 OpenCode 中使用 Alocs-Assistant 技能
 2. 直接询问公司政策相关问题，如：
    - "如何申请报销？"
    - "请假流程是什么？"

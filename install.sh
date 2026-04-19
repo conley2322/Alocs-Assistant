@@ -19,7 +19,7 @@ if ! command -v python3 &> /dev/null; then
 fi
 
 # 定义技能目录
-SKILL_DIR="$HOME/.trae/skills/Alocs-Assistant"
+SKILL_DIR="$HOME/Alocs-Assistant"
 
 # 创建技能目录
 if [ -d "$SKILL_DIR" ]; then
@@ -64,12 +64,15 @@ echo "===================================="
 echo "Alocs-Assistant 安装完成！"
 echo ""
 echo "使用方法："
-echo "1. 在 Trae IDE 中使用 Alocs-Assistant 技能"
-echo "2. 直接询问公司政策相关问题，如："
+echo "1. 技能已安装到：$SKILL_DIR"
+echo "2. 在 Trae IDE 或 OpenCode 中使用 Alocs-Assistant 技能"
+echo "3. 直接询问公司政策相关问题，如："
 echo "   - 如何申请报销？"
 echo "   - 请假流程是什么？"
 echo "   - GP积分如何计算？"
 echo ""
 echo "如需添加新文档，请将 PDF 文件放入项目根目录并运行："
 echo "python $SKILL_DIR/scripts/pdf_to_encrypted_md.py [PDF文件路径]"
+echo ""
+echo "提示：如需在其他环境中使用，请确保将 $SKILL_DIR 添加到相应的技能路径中"
 echo "===================================="
